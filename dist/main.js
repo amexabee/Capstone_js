@@ -14,7 +14,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("const addbtn = document.querySelector('.add');\nconst headerhidden = document.querySelector('.header');\n\naddbtn.addEventListener('click', () => {\n    headerhidden.classList.toggle('header-hidden');\n});\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
 
 /***/ })
 
