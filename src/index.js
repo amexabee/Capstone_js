@@ -15,7 +15,7 @@ const refresher = async () => {
     if (usernames.id < 7) {
       scorelist.innerHTML += `
   
-  <div>
+  <div class=outline>
   <div class="score">
   <p class="paragraph_url"><span>${
   usernames.id === 1
@@ -34,8 +34,9 @@ const refresher = async () => {
 }
   </span><span>Blog</span></p>
   </div>
-   <div>
+   <div  class="title_url"> 
     <p class="paragraph_url"><span>${usernames.name}</span></p>
+    <p class="paragraph_url"><span>Likes:</span></p>
    </div>
    <div class="like_comment">
    <button class="likes">Like</button>

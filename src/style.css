@@ -44,7 +44,7 @@ body {
 }
 
 .paragraph_url {
-  width: 200px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -93,6 +93,7 @@ button {
 .race,
 .Spaceships {
   cursor: pointer;
+  font-size: 20px;
 }
 
 .score {
@@ -127,4 +128,31 @@ button {
   align-items: center;
   justify-content: center;
   padding: 5px;
+}
+
+.title_url {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline {
+  border: 2px solid #000;
+  padding: 10px;
+  box-shadow: 1px 1px 0 0 #000;
+}
+
+/*  media query */
+
+@media screen and (max-width: 1100px) {
+  .scorelist {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .scorelist {
+    grid-template-columns: 1fr;
+  }
 }
