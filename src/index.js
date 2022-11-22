@@ -49,10 +49,7 @@ const refresher = async () => {
       `;
     }
   });
+  MakePopups.managePopups();
 };
 
 document.addEventListener('DOMContentLoaded', refresher, false);
-
-window.onload = () => {
-  setTimeout(MakePopups.managePopups(), 5000);
-};
