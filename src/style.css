@@ -1,7 +1,76 @@
-h1 {
+body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .headerhidden {
   display: none;
+}
+
+.div_header {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+}
+
+.div_footer {
+  display: flex;
+  border: 2px solid #000;
+  padding: 25px 15px 25px 15px;
+  margin: 0 5px 0 5px;
+}
+
+.div_second_footer {
+  display: flex;
+  border: 2px solid #000;
+  border-top: none;
+  margin: 0 5px 0 5px;
+  background-color: #ccc;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.rotate {
+  transform: rotate(20deg);
+  padding-right: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 450px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.planets,
+.race,
+.Spaceships {
+  cursor: pointer;
 }
