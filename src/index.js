@@ -2,7 +2,7 @@ import './style.css';
 import Main from './main.js';
 import MakeApicall from './Todo.js';
 import './img/heart.svg';
-import MakePopups from './reservations.js';
+import MakePopups from './popup.js';
 
 const scorelist = document.querySelector('.scorelist');
 const api = new MakeApicall();
