@@ -1,4 +1,4 @@
-export default class Leaderboard {
+export default class Main {
   constructor(array) {
     this.username = array;
   }

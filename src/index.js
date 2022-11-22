@@ -1,5 +1,5 @@
 import './style.css';
-import Leaderboard from './main.js';
+import Main from './main.js';
 import MakeApicall from './Todo.js';
 import './img/heart.svg';
 
@@ -9,9 +9,9 @@ const api = new MakeApicall();
 const refresher = async () => {
   scorelist.innerHTML = '';
   const res = await api.getmethod();
-  const Leaderboards = new Leaderboard(res);
+  const main = new Main(res);
 
-  Leaderboards.username.forEach((usernames) => {
+  main.username.forEach((usernames) => {
     if (usernames.id < 7) {
       scorelist.innerHTML += `
   
