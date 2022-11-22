@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -22,23 +21,56 @@
     <header>
       <div class="div_header">
         <a class="logo"> <span>SciFi</span> <span>logo</span> </a>
-        <a class="active"><span>Spaceships(6)</span></a>
-        <a> <span>planets</span> </a>
+        <a class="Spaceships active"><span>Spaceships(6)</span></a>
+        <a class="planets"> <span>planets</span> </a>
+        <div></div>
         <a class="race"> <span>Races</span> </a>
       </div>
     </header>
 
     <main>
-      <p class="header">Capstone</p>
-    <button class="add">add</button>
+      <section>
+        <div class="row">
+          <div class="col1">
+            <div class="recentscore">
+              <h2>Recent scores</h2>
+              <button class="refresh">Refresh</button>
+            </div>
+  
+            <ul class="scorelist"></ul>
+          </div>
+  
+          <div class="col2">
+            <h2>Add your score</h2>
+            <form>
+              <input
+                maxlength="8"
+                type="text"
+                class="name"
+                required
+                placeholder="Your name"
+              />
+              <input
+                maxlength="3"
+                type="text"
+                class="score"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                placeholder="Your score"
+              />
+              <div class="End-flex">
+                <button type="button" class="add">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+  
     </main>
 
     <footer>
-      <div class="div_footer">
-        Created by Microverse under CC license
-      </div>
+      <div class="div_footer">Created by Microverse under CC license</div>
       <div class="div_second_footer">
-          <span class="rotate">//</span>
+        <span class="rotate">//</span>
       </div>
     </footer>
 
