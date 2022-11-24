@@ -18,20 +18,20 @@ const refresher = async () => {
         <div class=outline>
         <div class="score">
         <p class="paragraph_url"><span>${
-        usernames.id === 1
-          ? 'First'
-          : usernames.id === 2
-            ? 'Second'
-            : usernames.id === 3
-              ? 'Third'
-              : usernames.id === 4
-                ? 'Fourth'
-                : usernames.id === 5
-                  ? 'Fifth'
-                  : usernames.id === 6
-                    ? 'Sixth'
-                    : ''
-      }
+  usernames.id === 1
+    ? 'First'
+    : usernames.id === 2
+      ? 'Second'
+      : usernames.id === 3
+        ? 'Third'
+        : usernames.id === 4
+          ? 'Fourth'
+          : usernames.id === 5
+            ? 'Fifth'
+            : usernames.id === 6
+              ? 'Sixth'
+              : ''
+}
         </span><span>Blog</span></p>
         </div>
         <div  class="title_url"> 
@@ -49,7 +49,7 @@ const refresher = async () => {
       `;
     }
   });
-  MakePopups.managePopups();
+  MakePopups.reservationPopups();
 };
 
 document.addEventListener('DOMContentLoaded', refresher, false);
