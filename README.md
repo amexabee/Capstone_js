@@ -41,9 +41,9 @@ $ open dist/index.html
 
 ## Authors
 
-👤 **Hevar Kas**[@whiteWolfx99](https://github.com/whiteWolfx99)
-👤 **Emmanuel Mhango** [@emmanuellmhango](https://github.com/emmanuellmhango)
-👤 **Amanuel Galema** [@amexabee](https://github.com/amexabee)
+- 👤 **Hevar Kas**[@whiteWolfx99](https://github.com/whiteWolfx99)
+- 👤 **Emmanuel Mhango** [@emmanuellmhango](https://github.com/emmanuellmhango)
+- 👤 **Amanuel Galema** [@amexabee](https://github.com/amexabee)
 
 ## 🤝 Contributing
 
