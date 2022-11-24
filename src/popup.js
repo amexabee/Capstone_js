@@ -44,12 +44,12 @@ export default class PopupModal {
       },
     })
       .then((response) => response.json())
-      .then((data) => this.displayComments(data))
+      .then((data) => this.displayAllReservations(data))
       .catch(() => this.childCounter(1));
     return data;
   }
 
-  static displayComments(data) {
+  static displayAllReservations(data) {
     const div = document.querySelector('.comment-headers');
 
     const nameP = document.createElement('p');
