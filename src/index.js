@@ -64,10 +64,12 @@ const refresher = async () => {
   </div>
    <div  class="title_url"> 
     <p class="paragraph_url"><span>${usernames.name}</span></p>
-    <p class="paragraph_url">  <span>Likes: ${mainlike[i].likes}</span></p>
+    <p class="paragraph_url">  Likes:
+      <input type="hidden" id="likes-results-${usernames.id}-val" value="${mainlike[i].likes}">
+      <span id="likes-results-${usernames.id}">${mainlike[i].likes}</span></p>
    </div>
    <div class="like_comment">
-   <button class="likes">Like</button>
+     <button class="likes">Like</button>
      <button class="comment" id="${usernames.id}}">Comment</button>
    </div>
 
@@ -75,7 +77,6 @@ const refresher = async () => {
    <button class="Reservations" id="${usernames.id}}">Reservations</button>
    </div>
   </div>
-
   `;
         }
       }
@@ -85,17 +86,19 @@ const refresher = async () => {
   for (let i = 0; i < document.querySelectorAll('.likes').length; i += 1) {
     document.querySelectorAll('.likes')[i].addEventListener('click', (e) => {
       e.preventDefault();
-
       addBtn(i);
-      setTimeout(() => {
-        refresher();
-      }, 500);
+      const id = i + 1;
+      const spanID = 'likes-results-'.concat(id);
+      const resultSpan = document.getElementById(spanID);
+      const inputField = 'likes-results-'.concat(id, '-val');
+      const resultVal = document.getElementById(inputField).value;
+      const sum = parseInt(resultVal, 10) + 1;
+      resultSpan.innerHTML = sum;
     });
   }
 
   Comments.comments();
   MakePopups.reservationPopups();
-
 };
 
 document.addEventListener('DOMContentLoaded', refresher, false);
