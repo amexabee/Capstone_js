@@ -221,7 +221,7 @@ I would like to thank all who inspired us during the project
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Can i run it on my local machine or do i need to host it on the internet?]**
+- **Can i run it on my local machine or do i need to host it on the internet?**
 
   - [Yes you can run it on your local machine. Just make sure that you install the required dependecies as stated in the installation part above]
 
