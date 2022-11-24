@@ -163,6 +163,12 @@ button {
   transition: 0.5s;
 }
 
+.date-posted {
+  color: rgba(68, 69, 69, 0.95);
+  font-size: 19px;
+  font-weight: 500;
+}
+
 /*  media query */
 
 @media screen and (max-width: 1100px) {
