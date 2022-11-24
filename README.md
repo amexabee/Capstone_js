@@ -24,9 +24,8 @@ To get a local copy up and running follow these simple example steps.
 - Code editor
   
 ### Setup
-Clone this repository
-$ git clone Clone [this repository](https://github.com/whiteWolfx99/Capstone_js.git)
-$ cd Capstone_js
+- Clone this repository [$ git clone https://github.com/whiteWolfx99/Capstone_js.git]
+- cd Capstone_js
 
 ### Install
 Run project
