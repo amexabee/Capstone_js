@@ -105,7 +105,7 @@ export default class Comments {
       div.addEventListener('click', () => {
         const id = parseInt(div.getAttribute('id'), 10);
         popup.style.display = 'block';
-        bodydiv.style.overflowY = 'none';
+        bodydiv.style.overflowY = 'hidden';
         popup.innerHTML += `
               <div class="inner-div">
                 <div class="popup-close" onclick="document.querySelector('.popup-modal').style.display = 'none'; window.location.reload();
