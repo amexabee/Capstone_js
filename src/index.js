@@ -3,7 +3,7 @@ import Main from './main.js';
 import MakeApicall from './Todo.js';
 import './img/heart.svg';
 import MakePopups from './popup.js';
-import Comments from './modules/comments';
+import Comments from './modules/comments.js';
 
 const scorelist = document.querySelector('.scorelist');
 const api = new MakeApicall();
@@ -19,20 +19,20 @@ const refresher = async () => {
         <div class=outline>
         <div class="score">
         <p class="paragraph_url"><span>${
-          usernames.id === 1
-            ? 'First'
-            : usernames.id === 2
-            ? 'Second'
-            : usernames.id === 3
-            ? 'Third'
-            : usernames.id === 4
-            ? 'Fourth'
-            : usernames.id === 5
+  usernames.id === 1
+    ? 'First'
+    : usernames.id === 2
+      ? 'Second'
+      : usernames.id === 3
+        ? 'Third'
+        : usernames.id === 4
+          ? 'Fourth'
+          : usernames.id === 5
             ? 'Fifth'
             : usernames.id === 6
-            ? 'Sixth'
-            : ''
-        }
+              ? 'Sixth'
+              : ''
+}
         </span><span>Blog</span></p>
         </div>
         <div  class="title_url"> 
@@ -45,8 +45,8 @@ const refresher = async () => {
         </div>
         <div class="like_comment">
             <button class="Reservations" id="${
-              usernames.id
-            }">Reservations</button>
+  usernames.id
+}">Reservations</button>
         </div>
         </div>
       `;

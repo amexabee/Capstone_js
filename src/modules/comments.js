@@ -6,21 +6,19 @@ export default class Comments {
       '-',
       fullDate.getMonth() + 1,
       '-',
-      fullDate.getDate()
+      fullDate.getDate(),
     );
   }
 
   static childCounter(id) {
     const allReservationsDivs = document.querySelectorAll('.single-comment');
     const reservationCounters = document.getElementById('reservation-totals');
-    id === 1
-      ? (reservationCounters.innerHTML = 0)
-      : (reservationCounters.innerHTML = allReservationsDivs.length);
+    if (id === 1) reservationCounters.innerHTML = 0;
+    else reservationCounters.innerHTML = allReservationsDivs.length;
   }
 
   static async postNewComment(data) {
-    const url =
-      'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/qvkLjRRWATbZfhQ7TGpS/comments';
+    const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/qvkLjRRWATbZfhQ7TGpS/comments';
     const result = await fetch(url, {
       method: 'POST',
       headers: {
@@ -44,8 +42,7 @@ export default class Comments {
   }
 
   static async getAllComments(id) {
-    const url =
-      'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/qvkLjRRWATbZfhQ7TGpS/comments';
+    const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/qvkLjRRWATbZfhQ7TGpS/comments';
     const results = await fetch(url.concat('?item_id=', id), {
       method: 'GET',
       headers: {
@@ -99,6 +96,7 @@ export default class Comments {
     secBody.appendChild(bod);
     div.appendChild(secBody);
   }
+
   static comments() {
     const popup = document.querySelector('.popup-modal');
     const comment = document.querySelectorAll('.comment');
