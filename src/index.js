@@ -10,7 +10,6 @@ import LikesApi from './js/Likes/LikesApi.js';
 import MakePopups from './modules/popup.js';
 import Comments from './modules/comments.js';
 
-
 // header
 const header = document.querySelector('.div_header');
 // container
