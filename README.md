@@ -76,11 +76,10 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[Add comments]**
-- **[Place your reservation]**
-- **[Like the topic]**
+- **Add comments**
+- **Place your reservation**
+- **Like the topic**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
