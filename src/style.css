@@ -163,6 +163,12 @@ button {
   transition: 0.5s;
 }
 
+.date-posted {
+  color: rgba(68, 69, 69, 0.95);
+  font-size: 19px;
+  font-weight: 500;
+}
+
 /*  media query */
 
 @media screen and (max-width: 1100px) {
@@ -190,7 +196,7 @@ button {
   background-color: #fff;
   height: 95%;
   width: 90%;
-  overflow-y:scroll;
+  overflow-y: scroll;
   margin: 10px auto;
   border-radius: 4px;
 }
@@ -211,7 +217,7 @@ button {
 }
 
 .single-comment {
-  background:rgba(245, 245, 245, 0.95);
+  background: rgba(245, 245, 245, 0.95);
   border-radius: 10px;
   padding: 5px;
   width: 95%;
@@ -245,8 +251,16 @@ button {
   width: 60%;
   height: 300px;
   border: 1px solid #000;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
 }
 
 .popup-title {
