@@ -1,8 +1,7 @@
-import './style.css';
-import Main from './main.js';
-import MakeApicall from './Todo.js';
-import './img/heart.svg';
-import MakePopups from './popup.js';
+import './asset/css/style.css';
+import Main from './js/main.js';
+import MakeApicall from './js/Todo.js';
+import MakePopups from './modules/popup.js';
 import Comments from './modules/comments.js';
 
 const scorelist = document.querySelector('.scorelist');
