@@ -53,7 +53,7 @@ const refresher = async () => {
     }
   });
   Comments.comments();
-  MakePopups.managePopups();
+  MakePopups.reservationPopups();
 };
 
 document.addEventListener('DOMContentLoaded', refresher, false);
