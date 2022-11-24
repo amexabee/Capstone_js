@@ -68,11 +68,11 @@ const refresher = async () => {
    </div>
    <div class="like_comment">
    <button class="likes">Like</button>
-     <button class="comment">Comment</button>
+     <button class="comment" id="${usernames.id}}">Comment</button>
    </div>
 
    <div class="like_comment">
-   <button class="Reservations">Reservations</button>
+   <button class="Reservations" id="${usernames.id}}">Reservations</button>
    </div>
   </div>
 
