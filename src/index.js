@@ -93,6 +93,7 @@ const refresher = async () => {
       const resultVal = document.getElementById(inputField).value;
       const sum = parseInt(resultVal, 10) + 1;
       resultSpan.innerHTML = sum;
+      document.getElementById(inputField).value = sum;
     });
   }
 
