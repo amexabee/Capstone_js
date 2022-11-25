@@ -131,7 +131,7 @@ Install these npm dependencies by running the commands below:
 
 ```sh
   cd my-project
-  npm install webpack webpack-cli web html-webpack-plugin
+  npm install webpack webpack-cli web html-webpack-plugin isomorphic-fetch
 ```
 
 ### Usage
