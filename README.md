@@ -161,7 +161,7 @@ To run tests, run the following command:
 
 - GitHub: [@whiteWolfx99](https://github.com/whiteWolfx99)
 - Email: [hhqu180099@uniq.edu.iq](mailto:hevarkas@gmail.com)
-- code review: [https://github.com/whiteWolfx99/Capstone_js/pull/28](Pull request)
+- code review:  [(https://github.com/whiteWolfx99/Capstone_js/pull/28)](Pull request)
 - video link:
 
 
