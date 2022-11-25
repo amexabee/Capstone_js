@@ -160,8 +160,8 @@ To run tests, run the following command:
 👤 **Hevar Kas**
 
 - GitHub: [@whiteWolfx99](https://github.com/whiteWolfx99)
-- Email: [hhqu180099@uniq.edu.iq](mailto:hhqu180099@uniq.edu.iq)
-- code review: https://github.com/whiteWolfx99/Capstone_js/pull/28
+- Email: [hhqu180099@uniq.edu.iq](mailto:hevarkas@gmail.com)
+- code review: [https://github.com/whiteWolfx99/Capstone_js/pull/28](Pull request)
 - video link:
 
 
