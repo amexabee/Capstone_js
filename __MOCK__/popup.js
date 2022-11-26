@@ -12,6 +12,18 @@ class PopupModal {
     return reservations.length;
   }
 
+  static postComment(newPost) {
+    const comments = [
+      {
+        item_id: 1,
+        name: 'Jenipher Hudson',
+        comment: 'Hello',
+      },
+    ];
+    comments.push(JSON.parse(newPost));
+    return comments.length;
+  }
+
   static getBlogTopicByID(index) {
     const blogTopics = [
       {
@@ -64,6 +76,30 @@ class PopupModal {
     let sum = 0;
     for (let i = 0; i < reservations.length; i += 1) {
       if (reservations[i].item_id === index) {
+        sum += 1;
+      }
+    }
+
+    return sum;
+  }
+
+  static getComments(index) {
+    const comments = [
+      {
+        item_id: 1,
+        name: 'Jenipher Hudson',
+        comment: 'Hello',
+      },
+      {
+        item_id: 2,
+        username: 'Marcus Garvey',
+        comment: 'Hi',
+      },
+    ];
+
+    let sum = 0;
+    for (let i = 0; i < comments.length; i += 1) {
+      if (comments[i].item_id === index) {
         sum += 1;
       }
     }
